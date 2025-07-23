@@ -1,0 +1,29 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',sans-serif;color:#333;line-height:1.6;background:#fdfdfd;}
+.container{max-width:1000px;width:90%;margin:auto;}
+.section{padding:60px 0;}
+h2{font-size:2rem;color:#2c3e50;margin-bottom:20px;}
+.btn{display:inline-block;padding:12px 24px;background:#2c3e50;color:#fff;border-radius:6px;text-decoration:none;transition:opacity .3s;margin-top:10px;}
+.btn:hover{opacity:.9;}
+header.hero{position:relative;height:80vh;background:url('https://images.unsplash.com/photo-1586201375761-83865001e2b0?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;display:flex;align-items:center;justify-content:center;}
+.hero .overlay{background:rgba(0,0,0,0.5);color:#fff;padding:40px;text-align:center;border-radius:8px;}
+.services .cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+.card{flex:1;min-width:260px;background:#ecf0f1;border-radius:8px;padding:20px;text-align:center;transition:transform .3s;}
+.card:hover{transform:translateY(-5px);}
+.card i{font-size:2rem;color:#2c3e50;margin-bottom:10px;}
+.pricing .plans{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+.plan{flex:1;min-width:260px;background:#ecf0f1;border-radius:8px;padding:20px;text-align:center;transition:transform .3s;}
+.plan:hover{transform:translateY(-5px);}
+.plan.featured{border:3px solid #2c3e50;}
+.plan h3{margin-bottom:10px;}
+.plan p{font-size:1.5rem;color:#2c3e50;}
+.plan ul{list-style:none;padding:0;margin:10px 0;}
+.plan li{margin-bottom:6px;color:#555;}
+.testimonials .quotes{display:flex;flex-direction:column;gap:15px;}
+.quote{background:#ecf6ed;padding:20px;border-left:5px solid #27ae60;border-radius:6px;font-style:italic;}
+.contact form{display:flex;flex-direction:column;gap:15px;margin-top:20px;}
+.contact input,.contact textarea{padding:12px;border:1px solid #ccc;border-radius:6px;font-size:16px;}
+.contact button{background:#2c3e50;color:#fff;border:none;padding:12px;font-size:16px;border-radius:6px;cursor:pointer;}
+.footer{background:#2c3e50;color:#fff;text-align:center;padding:30px;}
+.footer .socials a{color:#fff;margin:0 8px;font-size:20px;}
+@media(max-width:768px){.services .cards,.pricing .plans{flex-direction:column;align-items:center;}}
