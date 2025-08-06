@@ -58,12 +58,13 @@
   <section class="section contact" id="contact">
     <div class="container">
       <h2>Request a Repair</h2>
-      <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <textarea rows="4" placeholder="Describe the issue" required></textarea>
-        <button type="submit" class="btn">Submit Request</button>
+     <form id="contactForm" method="POST" action="submit.php">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Your project idea or question"></textarea>
+        <button type="submit" class="btn">Get in Touch</button>
       </form>
+      <div id="formMessage" style="margin-top: 1rem; color: red;"></div>
     </div>
   </section>
 
